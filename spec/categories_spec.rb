@@ -24,7 +24,7 @@ describe 'Categories' do
   end
 
   def swipe_right()
-    sleep(1)
+    sleep(1) #En ocasiones la pantalla principal demora un poco en cargar y el swipe no se realiza sobre la pantalla principal
     size = window_size
     start_x = size.width * 0.2; 
     end_x =  size.width * 0.8; 

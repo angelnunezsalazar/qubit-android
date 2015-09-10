@@ -1,0 +1,8 @@
+[caps]
+platformName = "Android"
+deviceName = "Android Emulator" #Sauce (cambiar por un deviceName de Sauce)
+app = "./tv.qubit.android.player.apk"
+appPackage = "tv.qubit.android.player"
+appActivity = ".Main"
+appiumVersion = "1.4.0" #Sauce
+platformVersion = "4.4" #Sauce
