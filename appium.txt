@@ -5,4 +5,4 @@ app = "./tv.qubit.android.player.apk"
 appPackage = "tv.qubit.android.player"
 appActivity = ".Main"
 appiumVersion = "1.4.0" #Sauce
-platformVersion = "4.4" #Sauce
+platformVersion = "5.1" #Sauce

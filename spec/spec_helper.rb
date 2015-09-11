@@ -8,7 +8,7 @@ def setup_driver
   if using_sauce
     upload_app
   end
-  $driver=Appium::Driver.new(@caps)  
+  $driver=Appium::Driver.new(@caps)
 end
 
 def using_sauce
@@ -18,7 +18,7 @@ def using_sauce
 end
 
 def upload_app
-  storage = SauceWhisk::Storage.new
+  storage = SauceWhisk::Storage.new debug: true
   app = @caps[:caps][:app]
   storage.upload app
   @caps[:caps][:app] = "sauce-storage:#{File.basename(app)}"
