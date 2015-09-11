@@ -35,6 +35,7 @@ RSpec.configure do |config|
 
   config.before(:each) do
     $driver.start_driver
+    set_wait(5) #Implicit Wait
     wait = Selenium::WebDriver::Wait.new(:timeout => 20)
     wait.until { find_element(:name,'TÉRMINOS Y CONDICIONES') }
   end

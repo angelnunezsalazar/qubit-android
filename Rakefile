@@ -1,4 +1,3 @@
-desc 'Run Android tests'
 task :rspec, :location do |t, args|
   if args[:location] != 'sauce'
     ENV['SAUCE_USERNAME']=nil

@@ -1,6 +1,6 @@
 [caps]
 platformName = "Android"
-deviceName = "Android Emulator" #Sauce (cambiar por un deviceName de Sauce)
+deviceName = "Android Emulator" #Local y Sauce
 app = "./tv.qubit.android.player.apk"
 appPackage = "tv.qubit.android.player"
 appActivity = ".Main"
