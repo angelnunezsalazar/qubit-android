@@ -6,4 +6,4 @@ appPackage = "tv.qubit.android.player"
 appActivity = ".Main"
 appiumVersion = "1.4.0" #Sauce
 platformVersion = "5.1" #Sauce
-idle-timeout = "120"
+idle-timeout = "120" #Sauce

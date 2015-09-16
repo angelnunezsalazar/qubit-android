@@ -37,8 +37,9 @@ RSpec.configure do |config|
   config.before(:each) do
     $driver.start_driver
     set_wait(10) #Implicit Wait
-    wait = Selenium::WebDriver::Wait.new(:timeout => 20)
+    wait = Selenium::WebDriver::Wait.new(:timeout => 30)
     wait.until { find_element(:name,'TÉRMINOS Y CONDICIONES') }
+    find_element(:id, 'tv.qubit.android.player:id/acceptButton').click
   end
 
   config.after(:each) do
