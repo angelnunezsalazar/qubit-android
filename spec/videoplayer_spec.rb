@@ -27,7 +27,8 @@ describe 'VideoPlayer' do
 
     #Player
     wait = Selenium::WebDriver::Wait.new(:timeout => 120)
-    video_player=wait.until {find_element(:id,'tv.qubit.android.player:id/video')}
-    expect(video_player).not_to be_nil 
+#    video_player=wait.until {find_element(:id,'tv.qubit.android.player:id/video')}
+    video_player=wait.until {find_element(:class,'android.widget.MediaController')}
+    expect(video_player).not_to be_nil
   end
 end
